@@ -35,13 +35,6 @@ int main() {
 			int xMouse = MouseX();
 			int yMouse = MouseY();
 
-			/*
-			if (xMouse >= x - radius && xMouse <= x + (radius * 3 * NLampadine) - radius * 2 && yMouse <= y + radius + radius / 2 && yMouse >= y - radius) {
-				Clear();
-				vettoreInverti(lampadina, nel_lampadina);
-				disegnaSerieLampadine(x, y, radius, NLampadine, lampadina);
-			}
-			*/
 			for (int cont = 0; cont < nel_lampadina; cont++) {
 				bool inLampadina = clickLampadina(xMouse, yMouse, radius, xLampadine[cont], yLampadine[cont]);
 				if (inLampadina == true) {
